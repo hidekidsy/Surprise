@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta charset="ISO-2022-JP">
+	<title>Akemi</title>
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+		}
+
+		img#img {
+			position: relative;
+			top: 0;
+			left: 0;
+			animation: img 1.5s 1;
+			transition: .2s;
+		}
+
+		span {
+			position: absolute;
+			left: 570px;
+			top: 180px;
+			font-size: 30px;
+			text-align: center;
+			font-weight: bold;
+			font-family: sans-serif;
+			color: #000;
+			animation: div 1.5s 1;
+			transition: .2s;
+		}
+
+
+		div {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			border: 10px solid #fff;
+			width: 1000px;
+			height: 700px;
+			background-image: url("pika.jpg");
+			background-color: #ffc000;
+			}
+
+		div:before {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			height: 50%;
+			background-color: rgba(255,255,255,.2);
+			}
+
+		button.bt {
+			position: absolute;
+			left: 670px;
+			top: 300px;
+			width: 150px;
+			height: 50px;
+			text-align: center;
+			background-color: transparent;
+			border: 3px solid #000;
+			border-radius: 7px;
+			font-size: 20px;
+			font-weight: bold;
+			color: #000;
+			animation: my 6s 1;
+			transition: .2s;
+		}
+
+		button.bt:hover {
+			text-align: center;
+			background-color: #fff;
+			border: 3px solid #ffc000;
+			border-radius: 7px;
+			font-size: 20px;
+			color: #ffc000;
+		}
+
+		button.bt1 {
+			position: absolute;
+			top: 0;
+			left:0;
+			width: 70px;
+			height: 45px;
+			text-align: center;
+			background-color: transparent;
+			border: 3px solid #fff;
+			font-weight: bold;
+			border-radius: 7px;
+			font-size: 16px;
+			color: #fff;
+			animation: img 1.5s 1;
+			transition: .2s;
+		}
+
+		button.bt1:hover{
+			background-color: #fff;
+			border: 3px solid #fff;
+			color: #ffc000;
+		}
+
+
+		@keyframes my {
+
+			0% {
+			opacity: 0;
+			}
+
+			50% {
+			opacity: 0
+			}
+			
+			100% {
+			opacity: 1
+			}
+		}
+
+		@keyframes div {
+
+			0% {
+			opacity: 0;
+			}
+
+			50% {
+			opacity: 0
+			}
+			
+			100% {
+			opacity: 1
+			}
+		}
+
+		@keyframes img {
+
+			0% {
+			opacity: 0;
+			}
+
+			50% {
+			opacity: 0
+			}
+			
+			100% {
+			opacity: 1
+			}
+		}
+	</style>
+</head>
+<body>
+	<img src="3.jpg">
+	<div><img id="img" src="foto1.jpg">
+		<span>この写真を覚えてますか？<br>最初の写真だよ</span>
+		<a href="2.html"> <button class="bt">覚えてるよ！</button></a>
+		<a href="1.html"> <button class="bt1">戻る</button></a>
+	</div>
+</body>
+</html>
